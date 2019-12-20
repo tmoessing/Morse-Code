@@ -1,0 +1,19 @@
+{
+  "deploy_settings": {
+    "default": {
+      "skill_id": "amzn1.ask.skill.8d79bb6e-a5f9-4894-97b5-1d26abd44501",
+      "was_cloned": false,
+      "merge": {
+        "skillManifest": {
+          "apis": {
+            "custom": {
+              "endpoint": {
+                "uri": "arn:aws:lambda:us-east-1:699296914020:function:bathroomBuddy"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
