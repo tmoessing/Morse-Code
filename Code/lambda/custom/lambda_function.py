@@ -56,10 +56,10 @@ def handle_launch_request(session):
 
     session_attributes = {}
     card_title      = "Welcome"
-    card_content    = "Welcome to Morse Code Messenger! what message would you like me to translate?"                      \
+    card_content    = "Welcome to Morse Code Messenger! what message would you like me to translate"                      \
 
 
-    speech_output   = "Welcome to Morse Code Messenger! What message would you like me to translate? "                      \
+    speech_output   = "Welcome to Morse Code Messenger! Say translate and the word or message you want me to translate? "                      \
 
 
     reprompt_text   = "Go ahead and ask me, if you need help just ask! "                                  \
@@ -182,9 +182,9 @@ def handle_help_intent(intent_name, session):
     card_title      = "Help"
     card_content    = "I can say a message in Morse Code for you, till me what you would like me to translate."
 
-    speech_output   = "I can say a message in Morse Code for you, till me what you would like me to translate. "
+    speech_output   = "I can say a message in Morse Code for you, till me what you would like me to translate. To help, say translate and then the word"
 
-    reprompt_text   = "Say 'Hello World' so I can translate that for you! "
+    reprompt_text   = "Say ' Translate Hello World' so I can translate that for you! "
 
     should_end_session = False
 
@@ -268,7 +268,7 @@ def lambda_handler(event, context):
     function.
     """
     if (event['session']['application']['applicationId'] !=
-             "amzn1.ask.skill.af3e4c27-a40f-4f02-87e3-20247932b441"):
+             "amzn1.ask.skill.9ff6c853-b197-482a-8700-e2cce44372b0"):
          raise ValueError("Invalid Application ID")
     
 
